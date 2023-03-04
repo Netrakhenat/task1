@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>task one of cascode internship</title>
+    <style>
+
+        html,body{
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            background-color:powderblue;
+        }
+        .wrapper{
+            max-width: 390px;
+            background-color:whitesmoke;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+        } 
+    </style>
+</head>
+<body> <!--style="text-align:center;"--> <!-- style="background-color:peru;> NOT WORK IN BODY TAG-->
+    <div class="wrapper" style="border-style:groove; border-radius:20px;">
+    <form action="actionTask1.php" style="text-align:center;">
+        <h1 style>SURVEY FORM</h1><br>
+        <p id="para1">This a Survey form about services provided in our building.This is to know your issues,suggestions 
+        on services provided.Please fill this form with complete honesty and seriousness.</p><br>
+        <p>How is Lift/Elevator working?</p>
+        <input type="radio" name="lift" id="Excellent" value="Excellent">
+        <label for="Excellent">Excellent!</label><br>
+        <input type="radio" name="lift" id="Good" value="Good">
+        <label for="Good">Good</label><br>
+        <input type="radio" name="lift" id="Bad" value="Bad">
+        <label for="Bad">Bad</label><br>
+        <input type="radio" name="lift" id="Worst" value="Worst">
+        <label for="Worst">Worst</label><br>
+        <p>If any issue with Lift services mention here your suggestion</p>
+        <input type="text" name="lift" id="lsugg" >
+        <p>Is garbage collection done properly?</p>
+        <input type="radio" name="garbage" id="yes" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" name="garbage" id="no" value="no">
+        <label for="no">No</label><br>
+        <p>Mention any issues with garabage collection every morning,if any</p>
+        <input type="text" name="garbage">
+        <p>Mention any issues with cleaning facilities in society area</p>
+        <input type="text" name="cleaning"><br>
+        <p>Is your complete maintanance paid?</p>
+        <input type="radio" name="maintainance" id="fpaid" value="fullypaid">
+        <label for="fpaid">fully paid</label><br>
+        <input type="radio" name="maintanance" id="npaid" value="notpaid">
+        <label for="npaid">not paid</label><br>
+        <p>Mention any other issues you are facing</p>
+        <textarea name="feedback" id="feedb" placeholder="mention if any issues" rows="4" column="8">
+        </textarea><br><br>
+        <input style="margin-top:30px;" type="submit" value="SUBMIT"> 
+    </form>
+    </div>   
+</body>
+</html>
